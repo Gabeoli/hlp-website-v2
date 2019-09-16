@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Gotham;
+  src: url("../assets/fonts/gotham-book-webfont.woff");
+}
+@font-face {
+  font-family: Gotham;
+  src: url("../assets/fonts/gotham-medium-webfont.woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Gotham;
+  src: url("../assets/fonts/gotham-bold-webfont.woff");
+  font-weight: 700;
+}

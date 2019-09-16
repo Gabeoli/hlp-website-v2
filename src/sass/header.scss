@@ -1,0 +1,37 @@
+header{
+    background: $Yellow;
+    position: relative;
+
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+
+        .hlp-logo{
+
+            img{
+                width: 120px;
+            }
+        }
+
+        .nav-links {
+            list-style: none;
+
+            li{
+                display: inline-block;
+                padding: 10px 15px;
+                color: $White;
+                font-weight: 600;
+
+                
+                a{
+                text-decoration: none;
+                letter-spacing: 0.75px;
+                color: $White;
+                }
+            }
+        }
+    }
+}
