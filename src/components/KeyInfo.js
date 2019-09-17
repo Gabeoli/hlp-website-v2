@@ -1,26 +1,18 @@
 import React, { Component } from 'react'
-import MainGraph from "./graphs/MainGraph"
+import LineChart from "./graphs/LineChart"
+import Figures from "./Figures"
 
 class KeyInfo extends Component {
     render() {
         return (
             <div className="key-info">
                 <div className="main-graph">
-                    <MainGraph/>
+                    <LineChart/>
                 </div>
                 <div className="main-figures">
-                    <div className="figure">
-                        <h3>Total Number of Players</h3>
-                        <h1>2310</h1>
-                    </div>
-                    <div className="figure">
-                        <h3>Total Number of Players</h3>
-                        <h1>2310</h1>
-                    </div>
-                    <div className="figure">
-                        <h3>Total Number of Players</h3>
-                        <h1>2310</h1>
-                    </div>
+                    <Figures label="Total Number of PLayers" number="2310"/>
+                    <Figures label="Total Number of PLayers" number="2310"/>
+                    <Figures label="Total Number of PLayers" number="2310"/>
                 </div>
             </div>
         )
