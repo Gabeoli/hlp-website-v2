@@ -5,11 +5,14 @@
     display: flex;
     justify-content: space-between;
 
+    h1{
+        margin-bottom: 30px;
+    }
+
     .row-object{
         background: $White;
-        width: 28%;
-        padding: 30px;
         border-radius: 10px;
+        width: 32%;
     }
 
 }

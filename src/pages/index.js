@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import KeyInfo from "../components/KeyInfo"
 import SecondaryInfo from "../components/SecondaryInfo"
 import InfoRow from "../components/InfoRow"
-import ConversationDemo from "../components/Conversation"
+import Conversation from "../components/ticker/Conversation"
 
 const IndexPage = () => (
   <Layout>
