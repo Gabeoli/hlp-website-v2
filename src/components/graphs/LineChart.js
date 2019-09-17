@@ -20,7 +20,6 @@ class LineChart extends Component {
                     {
                         label: "Sales",
                         data: [86, 67, 91],
-                        fill: "#FFD100",
                         borderColor: '#FFD100'
                     }
                 ]
@@ -51,7 +50,7 @@ class LineChart extends Component {
         return (
             <div>
                 <canvas
-                    id="myChart"
+                    id="lineChart"
                     ref={this.chartRef}
                 />
             </div>

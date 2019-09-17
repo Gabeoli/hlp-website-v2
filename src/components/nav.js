@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from "gatsby"
 import Logo from "../images/HelloLampPost_black.png"
 
-class nav extends Component {
+class Nav extends Component {
     render() {
         return (
             <nav>
@@ -21,4 +21,4 @@ class nav extends Component {
     }
 }
 
-export default nav;
+export default Nav;
