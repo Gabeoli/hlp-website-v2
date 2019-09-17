@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Chart from "chart.js"
 
 //Chart Style Options
-Chart.defaults.global.defaultFontFamily = "'Gotham', sans-serif"
 
 class PieChart extends Component {
     chartRef = React.createRef();
@@ -37,17 +36,30 @@ class PieChart extends Component {
                     arc:{
                         borderWidth: 0
                     }
+                },
+                legend:{
+                    position: 'bottom',
+                    labels: {
+                        boxWidth: 20,
+                        padding: 50
+                    }
                 }
             }
         });
     }
     render() {
         return (
-            <div>
-                <canvas
-                    id="pieChart"
-                    ref={this.chartRef}
-                />
+            <div className="pie-chart">
+                <div className="text-container">
+                    <h1>Graph Title</h1>
+                    <p>What would you like to see more of?</p>
+                </div>
+                <div className="chart-container">
+                    <canvas
+                        id="pieChart"
+                        ref={this.chartRef}
+                    />
+                </div>
             </div>
         )
     }

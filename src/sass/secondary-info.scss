@@ -9,6 +9,22 @@
     .col-left{
         flex: 1;
         padding: 30px;
+
+        .pie-chart {
+
+            .text-container {
+                margin-bottom: 30px;
+                
+                h1 {
+                    padding-bottom: 15px;
+                }
+            }
+
+            .chart-container {
+                width: 100%;
+                align-content: center;
+            }
+        }
     }
 
     .col-right{

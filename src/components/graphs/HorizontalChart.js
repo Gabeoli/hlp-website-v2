@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import Chart from "chart.js"
 
-//Chart Style Options
-Chart.defaults.global.defaultFontFamily = "'Gotham', sans-serif";
-//
-
 class HorizontalChart extends Component {
     chartRef = React.createRef();
     
@@ -27,7 +23,6 @@ class HorizontalChart extends Component {
             options: {
                 //Customize chart options
                 responsive: true,
-                maintainAspectRation: false,
                 scales: {
                     xAxes: [{
                         gridLines: {
