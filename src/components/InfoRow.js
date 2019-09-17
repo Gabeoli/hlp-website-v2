@@ -6,13 +6,20 @@ class InfoRow extends Component {
         return (
             <div className="info-row">
                 <div className="row-object">
+                    <div className="content">
+
+                    </div>
                 </div>
                 <div className="row-object">
-                    <h1>Something Here</h1>
-                    <BarChart />
+                    <div className="content">
+                        <h1>Something Here</h1>
+                        <BarChart />
+                    </div>
                 </div>
                 <div className="row-object">
-                    <h1>Col 3</h1>
+                    <div className="content">
+                        <h1>Waddup bih</h1>
+                    </div>
                 </div>
             </div>
         )
