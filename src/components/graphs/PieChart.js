@@ -31,6 +31,14 @@ class PieChart extends Component {
                     }
                 ]
             },
+            options: {
+                responsive: true,
+                elements:{
+                    arc:{
+                        borderWidth: 0
+                    }
+                }
+            }
         });
     }
     render() {

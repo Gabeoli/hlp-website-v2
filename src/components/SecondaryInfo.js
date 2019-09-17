@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PieChart from './graphs/PieChart'
+import HorizontalChart from './graphs/HorizontalChart'
 
 class SecondaryInfo extends Component {
     render() {
@@ -10,7 +11,7 @@ class SecondaryInfo extends Component {
 
                 </div>
                 <div class="col-right">
-
+                    <HorizontalChart />
                 </div>
             </div>
         )
