@@ -1,0 +1,15 @@
+.info-row{
+    width: 100%;
+    margin-bottom: 30px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+
+    .row-object{
+        background: $White;
+        width: 28%;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+}

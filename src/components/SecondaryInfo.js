@@ -6,11 +6,11 @@ class SecondaryInfo extends Component {
     render() {
         return (
             <div className="secondary-info">
-                <div class="col-left">
+                <div className="col-left">
                     <PieChart />
 
                 </div>
-                <div class="col-right">
+                <div className="col-right">
                     <HorizontalChart />
                 </div>
             </div>
