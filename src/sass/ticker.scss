@@ -1,0 +1,42 @@
+.ticker {
+    position: relative;
+
+    .question-bubble,
+    .answer-bubble {
+        width: 75%;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .question-bubble {
+        background: #EEEEEE;
+    }
+
+    .answer-bubble {
+        background: $Blue;
+
+        &>* {
+            color: $White;
+        }
+    }
+
+    .btn-holder {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 40%;
+            background: $Yellow;
+            font-family: Gotham, Arial, sans-serif;
+            font-weight: 700;
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+
+            &:hover {
+                background: lighten($Yellow, 20%);
+            }
+        }
+    }
+}

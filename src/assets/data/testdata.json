@@ -1,0 +1,12 @@
+{
+    "question-list": {
+        "question": "Question 1. What is a Question?",
+        "answers-list": {
+            "answer":[
+                {"content": "This is answer one"},
+                {"content": "This is answer two"},
+                {"content": "This is answer thrice"}             
+            ]
+        }
+    }
+}

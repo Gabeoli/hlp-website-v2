@@ -7,13 +7,14 @@ import SEO from "../components/seo"
 import KeyInfo from "../components/KeyInfo"
 import SecondaryInfo from "../components/SecondaryInfo"
 import InfoRow from "../components/InfoRow"
-import Conversation from "../components/ticker/Conversation"
+import Map from "../components/Map"
 
 const IndexPage = () => (
   <Layout>
       <KeyInfo />
       <SecondaryInfo/>
       <InfoRow/>
+      <Map/>
   </Layout>
 )
 
