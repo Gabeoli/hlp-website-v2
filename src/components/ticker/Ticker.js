@@ -60,18 +60,18 @@ class Ticker extends Component {
 
       // Show Next Answer.
       nextAnswer = () => {
-          if(i < this.state.responses.length){
+          if(i < this.state.responses.length - 1){
             i++;
             this.setState({
                 answer: this.state.responses[i].text
             });
-            console.log(this.state.responses.length)
           } else{
             i = 0;
             this.setState({
                 answer: this.state.responses[i].text
             });
           }
+          console.log(i);
         }
 
     render() {
