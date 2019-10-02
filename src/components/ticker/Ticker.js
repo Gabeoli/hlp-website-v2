@@ -4,7 +4,7 @@ import Question from './Question'
 import NextAnswerBtn from './NextAnswerBtn'
 import NextQuestionBtn from './NextQuestionBtn'
 
-
+let i = 0;
 class Ticker extends Component {
 
 
@@ -14,18 +14,22 @@ class Ticker extends Component {
             error: null,
             isLoaded: false,
             question: "",
-            response: "",
-            data: null
+            responses: [],
+            answer: "",
+            data: null,
+            id: "",
         };
       }
       
-
+      //When Page Starts
       componentDidMount(){
           this.getData();
       }
 
       // Fetch API
       getData = () => {
+
+        //INSERT JSON API
         fetch("https://hello-lamp-post-api.herokuapp.com/questions/random?location_id=10&locale=en")
         .then(res => res.json())
         .then(
@@ -34,11 +38,16 @@ class Ticker extends Component {
                     isLoaded: true,
                     data: result,
                     question: result.question.text.en,
-                    response: result.responses[0].text
+                    responses: result.responses,
+                    id: result.question.id,
                 });
-
-                console.log(this.state.data)
+                //Sets Default Answer
+                i = 0;
+                this.setState({
+                    answer: this.state.responses[i].text
+                });
             },
+            //Error Handle
             (error) => {
                 this.setState({
                   isLoaded: true,
@@ -48,18 +57,29 @@ class Ticker extends Component {
         )
       }
 
-      nextResponse = () => {
 
-      }
-
-
+      // Show Next Answer.
+      nextAnswer = () => {
+          if(i < this.state.responses.length){
+            i++;
+            this.setState({
+                answer: this.state.responses[i].text
+            });
+            console.log(this.state.responses.length)
+          } else{
+            i = 0;
+            this.setState({
+                answer: this.state.responses[i].text
+            });
+          }
+        }
 
     render() {
         const {
             error,
             isLoaded,
             question,
-            response
+            answer
         } = this.state;
 
         if (error){
@@ -71,10 +91,10 @@ class Ticker extends Component {
             return (
                 <div>
                     <Question question={question}/>
-                    <Answer answer={response}/>
+                    <Answer answer={answer}/>
                     <div className="btn-holder">
                         <NextQuestionBtn question={this.getData}/>
-                        <NextAnswerBtn/>
+                        <NextAnswerBtn nextAnswer={this.nextAnswer}/>
                     </div>
                 </div>
             )
